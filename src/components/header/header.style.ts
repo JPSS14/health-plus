@@ -6,7 +6,6 @@ export const HeaderContainerStyle: SxProps<Theme> = (theme) => {
     background: hplus.primaryColor,
     color: hplus.textPrimary,
     padding: `${theme.spacing(0.5)} ${theme.spacing(2)}`,
-    marginBottom: theme.spacing(4),
 
     '& .logo':{
       fontSize: '2rem',
