@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Content } from '../components/content';
 import { Description } from '../components/description';
+import { Evidence } from '../components/evidence';
 import { Plans } from '../components/plans';
 
 export default function Home() {
@@ -14,8 +15,9 @@ export default function Home() {
       </Head>
       <main>
         <Content>
-          <Description/>
-          <Plans/>
+          <Description />
+          <Plans />
+          <Evidence />
         </Content>
       </main>
     </>
