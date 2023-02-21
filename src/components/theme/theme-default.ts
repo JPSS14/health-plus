@@ -40,17 +40,19 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         textPrimary: {
-          background: '#8C6645',
-          color: '#fff',
+          background: '#4A1B8C',
+          color: '#F2C49B',
           '&:hover': {
-            background: '#59412C'
+            background: '#F2C49B',
+            color: '#4A1B8C',
           }
         },
         textSecondary: {
-          background: '#995243',
-          color: '#fff',
+          background: '#D9AB9A',
+          color: '#5E308C',
           '&:hover': {
-            background: '#59412C'
+            background: '#5E308C',
+            color: '#D9AB9A',
           }
         }
       }
