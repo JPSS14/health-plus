@@ -46,6 +46,9 @@ export const CardFooterStyle = (plan?: 'Essencial' | 'Absoluto'): SxProps<Theme>
 
     '& .card__name': {
       color: secondaryPlanColor,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
     }
   }
 };
