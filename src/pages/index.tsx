@@ -2,7 +2,9 @@ import Head from 'next/head';
 import { Content } from '../components/content';
 import { Description } from '../components/description';
 import { Evidence } from '../components/evidence';
+import { Partners } from '../components/partners';
 import { Plans } from '../components/plans';
+import { Register } from '../components/register';
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
           <Description />
           <Plans />
           <Evidence />
+          <Register />
+          <Partners />
         </Content>
       </main>
     </>
