@@ -15,6 +15,10 @@ export const EvidenceCardContainer: SxProps<Theme> = (theme) => {
     '@media(max-width: 630px)':{
       flexDirection: 'column',
       height: '320px',
+    },
+    '@media(max-width: 400px)':{
+      width: '230px',
+      height: '500px',
     }
   };
 };
@@ -57,5 +61,10 @@ export const EvidenceContetnStyle = (plan: 'Absoluto' | 'Essencial'): SxProps<Th
     '& .content__description': {
       color: common.black,
     },
+
+    '@media(max-width: 400px)':{
+      marginTop: theme.spacing(24),
+      marginLeft: theme.spacing(0),
+    }
   };
 };
