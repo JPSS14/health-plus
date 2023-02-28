@@ -37,6 +37,7 @@ export const ContentHeaderStyle: SxProps<Theme> = (theme) => {
     },
     '@media(max-width: 800px)':{
       flexWrap: 'wrap',
+      height: 'auto',
 
       '& .header__title':{
         width: '100%',
@@ -55,11 +56,15 @@ export const ContentImageContainer: SxProps<Theme> = () => {
     justifyContent: 'center',
 
     '& img':{
-      width: '100%',
+      width: '450px',
     },
 
     '@media(max-width: 800px)':{
-      width: '50%',
+      width: '100%',
+
+      '& img':{
+        width: '300px',
+      }
     },
   };
 };
