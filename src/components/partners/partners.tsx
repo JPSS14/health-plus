@@ -1,6 +1,6 @@
 import { partners } from "@/src/constants/partners";
 import { Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 import { PartnersContainerStyle, PartnersListContainer } from "./partners.style";
 
 export const Partners = () => {
