@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to GitHub Pages
 on:
   push:
     branches:
@@ -6,27 +6,16 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-        
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        ref: main
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
-    - name: Install Dependencies and Build
+    - uses: actions/checkout@v2
+    - name: Install dependencies
       run: |
-        yarn install
-        yarn build
-    - name: Deploy to Github Pages
-      uses: JamesIves/github-pages-deploy-action@v4
+        npm install
+    - name: Build
+      run: |
+        npm run build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        folder: out
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out
