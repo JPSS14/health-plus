@@ -1,8 +1,10 @@
 import { Box, Typography } from '@mui/material';
 import { FC } from 'react';
+import getConfig from 'next/config';
 import { ContentContainerStyle, ContentHeaderStyle, ContentImageContainer } from './content.style';
 
 export const Content: FC<{ children?: React.ReactNode }> = ({ children }) => {
+  const { publicRuntimeConfig } = getConfig();
   return (
     <Box component='article' sx={ContentContainerStyle}>
       <Box component='header' sx={ContentHeaderStyle}>
@@ -12,7 +14,7 @@ export const Content: FC<{ children?: React.ReactNode }> = ({ children }) => {
         </Box>
         <Box className="header__image">
           <Box sx={ContentImageContainer}>
-            <img src="/consulta-medica.svg" alt="Consulta médica" title="Consulta médica" />
+            <img src={`${publicRuntimeConfig.baseUrl}img/consulta-medica.svg`} alt="Consulta médica" title="Consulta médica" />
           </Box>
         </Box>
       </Box>
