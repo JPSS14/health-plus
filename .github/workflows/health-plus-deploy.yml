@@ -16,7 +16,7 @@ jobs:
         npm run build
     - name: nojeckyll  
       run: |
-        npm touch ./out/.nojeckyll
+        touch ./out/.nojeckyll
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
