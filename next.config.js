@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/health-plus',
-  assetPrefix: '/health-plus',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   publicRuntimeConfig:{
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000/health-plus/'
+    baseUrl: process.env.NEXT_PUBLIC_BASE_PATH || 'http://localhost:3000/'
   }
 }
 

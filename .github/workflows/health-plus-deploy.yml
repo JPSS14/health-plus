@@ -14,6 +14,8 @@ jobs:
     - name: Build
       run: |
         npm run build
+      env: 
+        NEXT_PUBLIC_BASE_PATH: '/health-plus'
     - name: nojeckyll  
       run: |
         touch ./out/.nojeckyll
