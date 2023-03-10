@@ -1,33 +1,24 @@
-name: Node.js CI
-
+name: Deploy to GitHub Pages
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - main
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        npm install
+    - name: Build
+      run: |
+        npm run build
+    - name: nojeckyll  
+      run: |
+        touch ./out/.nojeckyll
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
-    - run: yarn install --frozen-lockfile
-    - run: yarn run build
-    - run: yarn export
-
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        folder: out
+        github_token: ${{ secrets.health_plus_token }}
+        publish_dir: ./out
