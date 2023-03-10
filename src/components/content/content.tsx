@@ -14,7 +14,7 @@ export const Content: FC<{ children?: React.ReactNode }> = ({ children }) => {
         </Box>
         <Box className="header__image">
           <Box sx={ContentImageContainer}>
-            <img src={`${publicRuntimeConfig.baseUrl}img/consulta-medica.svg`} alt="Consulta médica" title="Consulta médica" />
+            <img src={`${publicRuntimeConfig.baseUrl}/img/consulta-medica.svg`} alt="Consulta médica" title="Consulta médica" />
           </Box>
         </Box>
       </Box>
