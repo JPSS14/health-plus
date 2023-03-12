@@ -18,7 +18,7 @@ export const EvidenceCardContainer: SxProps<Theme> = (theme) => {
     },
     '@media(max-width: 400px)':{
       width: '230px',
-      height: '500px',
+      height: 'auto',
     }
   };
 };
