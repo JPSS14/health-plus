@@ -14,6 +14,10 @@ yarn dev
 # or
 pnpm dev
 ```
+
+Or visit [this](https://jpss14.github.io/health-plus/) to test now!
+
+
 ![health-plus-intro](https://user-images.githubusercontent.com/40327303/220499596-3a9d72a4-1374-4d9e-b922-ba3ac7fed701.png)
 
 ![health-plus-assinatura](https://user-images.githubusercontent.com/40327303/220499627-2ddcb08f-86d9-4917-b793-8bc22404b59c.png)
