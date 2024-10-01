@@ -1,3 +1,7 @@
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jpss14/health-plus)
+![Last Commit](https://img.shields.io/github/last-commit/jpss14/health-plus)
+![GitHubissues](https://img.shields.io/github/issues/jpss14/health-plus)
+![GitHub Stars](https://img.shields.io/github/stars/jpss14/health-plus)
 
 ## Getting Started
 
@@ -16,7 +20,6 @@ pnpm dev
 ```
 
 Or visit [this](https://jpss14.github.io/health-plus/) to test now!
-
 
 ![health-plus-intro](https://user-images.githubusercontent.com/40327303/220499596-3a9d72a4-1374-4d9e-b922-ba3ac7fed701.png)
 
