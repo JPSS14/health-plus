@@ -3,6 +3,7 @@
 ![GitHubissues](https://img.shields.io/github/issues/jpss14/health-plus)
 ![GitHub Stars](https://img.shields.io/github/stars/jpss14/health-plus)
 ![GitHub License](https://img.shields.io/github/license/jpss14/health-plus)
+![GitHub Top Language](https://img.shields.io/github/languages/top/jpss14/health-plus)
 
 ## Getting Started
 
