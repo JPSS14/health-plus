@@ -5,6 +5,7 @@
 ![GitHub License](https://img.shields.io/github/license/jpss14/health-plus)
 ![GitHub Top Language](https://img.shields.io/github/languages/top/jpss14/health-plus)
 ![GitHub Number of languages](https://img.shields.io/github/languages/count/JPSS14/health-plus)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/jpss14/health-plus)
 
 ## Getting Started
 
