@@ -30,3 +30,7 @@ Or visit [this](https://jpss14.github.io/health-plus/) to test now!
 ![health-plus-assinatura](https://user-images.githubusercontent.com/40327303/220499627-2ddcb08f-86d9-4917-b793-8bc22404b59c.png)
 
 ![health-plus-depoimentos](https://user-images.githubusercontent.com/40327303/220499655-8dc03d83-7f3c-4fee-8afd-5823a90add4e.png)
+
+## Contact
+
+João Pedro Scarabelli Silva - [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-pedro-s-silva/)
